@@ -1,0 +1,22 @@
+public class multiplecatch {
+    public static void main(String[] args) {
+        try {
+            int arr[]=new int[10];
+            arr[10]=25;
+
+            
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException divisible by zero");
+        } catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexoutOfBoundException:array index out of bond");
+        } catch(Exception e){
+            System.out.println("Exception :some other exception occured");
+        }
+        finally{
+        
+        System.out.println("rest of the code");
+        }
+        
+    }
+    
+}
